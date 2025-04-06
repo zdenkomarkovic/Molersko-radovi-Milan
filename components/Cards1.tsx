@@ -26,7 +26,6 @@ const Cards1 = ({ title, data }: { title: string; data: Cards1Data[] }) => {
 export default Cards1;
 
 const OneCard = ({ item }: { item: Cards1Data }) => {
-  const IconComponent = item.icon;
   return (
     <Card className="h-full">
       <CardHeader>
