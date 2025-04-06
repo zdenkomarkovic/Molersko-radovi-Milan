@@ -14,29 +14,8 @@ export const navList = [
     link: "/",
   },
   {
-    title: "Usluge",
-    list: [
-      {
-        title: "Kuhinje",
-        link: "",
-      },
-      {
-        title: "Plakari",
-        link: "",
-      },
-      {
-        title: "TV Komode",
-        link: "",
-      },
-      {
-        title: "Projektovanje Enterijera",
-        link: "",
-      },
-    ],
-  },
-  {
-    title: "Proizvodi",
-    link: "/proizvodi",
+    title: "Fasade",
+    link: "/fasade",
   },
   {
     title: "Kontakt",
@@ -138,33 +117,53 @@ export interface Cards1Data {
   id: number;
   icon: IconType;
   title: string;
-  text: string;
+  text: string[];
 }
 
 export const cards1Data: Cards1Data[] = [
   {
     id: 1,
     icon: GiWeight,
-    title: "Iskustvo i profesionalizam",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    title: "Gletovanje zidova",
+    text: [
+      "Priprema zidova za farbanje i krečenje.",
+      "Ravnanje neravnih površina i popunjavanje pukotina.",
+      " Korišćenje kvalitetnih glet masa za dugotrajan efekat.",
+      "Precizna završna obrada za savršeno glatke zidove.",
+    ],
   },
   {
     id: 2,
     icon: GiWeight,
-    title: "Iskustvo i profesionalizam",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    title: "Farbanje i krečenje zidova i plafona",
+    text: [
+      "Nanošenje disperzionih, akrilnih, poludisperzionih i drugih boja.",
+      " Korišćenje boja visokog kvaliteta koje su otporne na habanje i pranje.",
+      "Tehnički precizna aplikacija za ravnomernu pokrivenost bez fleka.",
+      "Poštovanje svih higijenskih standarda - minimalno prašenje i prljanje.",
+    ],
   },
   {
     id: 3,
     icon: GiWeight,
-    title: "Iskustvo i profesionalizam",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    title: "Dekoracije zidova - Različite tehnike farbanja i oslikavanja",
+    text: [
+      "Dekorativne tehnike - mermer efekat, beton look, metalik boje, patina efekti.",
+      "Strukturirane zidne tehnike - upotreba valjaka, četki i šablona za jedinstvene motive.",
+      "Ombre efekat - postepeni prelazi između boja za moderan izgled.",
+      "Tapetiranje - lepljenje tapeta uz savršeno poravnanje spojeva.",
+    ],
   },
   {
     id: 4,
     icon: GiWeight,
-    title: "Srbija i inostranstvo",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    title: "Izrada demit fasade",
+    text: [
+      "Postavljanje termoizolacije - stiropor, kamena vuna i drugi termoizolacioni materijali.",
+      " Armiranje i završna obrada - zaštitni slojevi koji produžavaju trajnost fasade.",
+      " Širok izbor završnih fasadnih boja i struktura - od glatkih do rustičnih.",
+      "Dugotrajna zaštita - fasade otporne na vremenske uslove i UV zračenje.",
+    ],
   },
 ];
 
@@ -249,20 +248,26 @@ export const cards2Data: Cards2Data[] = [
   {
     id: 1,
     icon: GiWeight,
-    title: "Elektroinstalacije",
-    text: "",
+    title: "Besplatna procena",
+    text: "Dolazimo na lokaciju, procenjujemo radove i savetujemo najbolje rešenje.",
   },
   {
     id: 2,
     icon: GiWeight,
-    title: "Elektro ormani",
-    text: "",
+    title: "Dogovor i planiranje",
+    text: "Precizno definišemo rokove i materijale koji će biti korišćeni.",
   },
   {
     id: 3,
     icon: GiWeight,
-    title: "Industrijski elektro ormani",
-    text: "",
+    title: "Izvođenje radova",
+    text: "Pedantan i stručan rad uz maksimalno poštovanje dogovora.",
+  },
+  {
+    id: 4,
+    icon: GiWeight,
+    title: "Završna kontrola i isporuka",
+    text: "Provera kvaliteta i zadovoljstvo klijenata na prvom mestu.",
   },
 ];
 

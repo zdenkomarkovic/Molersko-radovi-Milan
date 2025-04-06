@@ -1,61 +1,47 @@
 import Image from "@/node_modules/next/image";
 import React from "react";
-import { FaRegCircleCheck } from "react-icons/fa6";
 
 const CardWithImage = () => {
   return (
-    <div className="container px-2 md:px-4 mx-auto text-right md:py-20 ">
+    <div className="container px-2 md:px-4 mx-auto text-center md:py-20 ">
       <h2 className="text-2xl md:text-5xl text-primary font-bold py-6">
-        POVOLJNA CENA I BRZA USLUGA ŠLEPANJA VOZILA U ZEMLJI I INOSTRANSTVU
+        Zašto odabrati baš nas?
       </h2>
       <div className="flex flex-col md:flex-row md:gap-20  items-stretch ">
         <div>
           <Image
-            src={"/puric slep.jpg"}
+            src={"/hero.jpg"}
             width={700}
             height={700}
-            alt="slep cacak"
-            className="rounded-xl md:rounded-l-full"
+            alt="moler"
+            className="rounded-xl"
           />
         </div>
-        <div className="flex flex-col gap-2 md:gap-0 py-8 md:py-20 md:justify-between text-left text-xl md:text-3xl">
-          <p className="flex gap-5 items-center">
+        <div className="flex flex-col gap-2 md:gap-0 py-8 md:py-20 md:justify-between text-left">
+          <p className="">
             {" "}
-            <span className="text-primary text-4xl md:text-5xl bg-muted-foreground rounded-full">
-              <FaRegCircleCheck />
-            </span>{" "}
-            Treba vam pomoć na putu?
+            <span className="font-bold">Dugogodišnje iskustvo</span> - Stručnost
+            i preciznost u radu.
           </p>
-          <p className="flex gap-5 items-center">
-            {" "}
-            <span className="text-primary text-4xl md:text-5xl bg-muted-foreground rounded-full">
-              <FaRegCircleCheck />
-            </span>
-            U svakom trenutku spremni 24h dnevno
+          <p className="">
+            <span className="font-bold">Korišćenje vrhunskih materijala</span> -
+            Boje i premazi koji garantuju dug vek trajanja.
           </p>
-          <p className="flex gap-5 items-center">
-            <span className="text-primary text-4xl md:text-5xl bg-muted-foreground rounded-full">
-              <FaRegCircleCheck />
-            </span>
-            Povoljne cene
+          <p className="">
+            <span className="font-bold">Pedantnost i profesionalnost</span> -
+            Čist i uredan rad, bez nepotrebnog nereda.
           </p>
-          <p className="flex gap-5 items-center">
-            <span className="text-primary text-4xl md:text-5xl bg-muted-foreground rounded-full">
-              <FaRegCircleCheck />
-            </span>
-            Profesionalna usluga
+          <p className="">
+            <span className="font-bold">Poštovanje rokova</span> - Završen posao
+            u dogovorenom vremenskom periodu.
           </p>
-          <p className="flex gap-5 items-center">
-            <span className="text-primary text-4xl md:text-5xl bg-muted-foreground rounded-full">
-              <FaRegCircleCheck />
-            </span>
-            Dugogodisnje iskustvo
+          <p className="">
+            <span className="font-bold">Pristupačne cene</span> - Kvalitetan rad
+            uz fer i povoljne cene.
           </p>
-          <p className="flex gap-5 items-center">
-            <span className="text-primary text-4xl md:text-5xl bg-muted-foreground rounded-full">
-              <FaRegCircleCheck />
-            </span>
-            Poštujemo vaše vreme
+          <p className="">
+            <span className="font-bold">Fleksibilnost</span> - Radimo u skladu s
+            vašim željama i potrebama.
           </p>
         </div>
       </div>

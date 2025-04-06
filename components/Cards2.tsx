@@ -1,6 +1,7 @@
 import { Cards2Data, Cards2DataText } from "@/constants/index";
 import { CardHeader, CardContent, Card } from "./ui/card";
 import MotionComponent1 from "./MotionComponent1";
+import Image from "@/node_modules/next/image";
 
 const Cards2 = ({
   title,
@@ -13,20 +14,26 @@ const Cards2 = ({
 }) => {
   return (
     <div className="">
-      <div className="container px-5 mx-auto py-10 md:py-16 border-b-2 space-y-10 md:space-y-20">
-        <h2 className="text-4xl md:text-5xl text-center text-primary font-bold">
+      <div className="container px-2 md:px-5 mx-auto py-10 md:py-16 border-b-2 space-y-10 md:space-y-20">
+        <Image
+          src={"/krecenje1.jpg"}
+          width={500}
+          height={500}
+          alt="krecenje"
+          className="w-full rounded-xl"
+        />
+        <h2 className="text-3xl md:text-5xl text-center text-primary font-bold">
           {title}
         </h2>
-        <div className="grid md:grid-cols-3 text-center gap-6 md:gap-8 items-stretch">
+        <div className="grid md:grid-cols-4 text-center gap-6 md:gap-8 items-stretch">
           {data.map((item) => {
             return (
               <MotionComponent1 key={item.id}>
-                <OneCard key={item.id} item={item} />;
+                <OneCard key={item.id} item={item} />
               </MotionComponent1>
             );
           })}
         </div>
-        <p className="first-letter:pl-6 text-xl md:text-3xl">{text.text}</p>
       </div>
     </div>
   );
@@ -39,13 +46,13 @@ const OneCard = ({ item }: { item: Cards2Data }) => {
 
   return (
     <Card className="h-full">
-      <CardHeader className=""></CardHeader>
-      <CardContent className="flex gap-5 items-center text-xl md:text-3xl justify-start">
-        <div className=" md:text-4xl text-primary ">
+      <CardContent className="text-lg md:text-xl ">
+        <div className=" font-bold py-5 text-center">
           {" "}
-          <IconComponent className="text-4xl md:text-6xl" />
+          <IconComponent className="text-primary mx-auto" />
+          <p className="text-primary pt-5">{item.title}</p>
         </div>
-        <p className="text-left">{item.title}</p>
+        <p className="text-left">{item.text}</p>
       </CardContent>
     </Card>
   );
