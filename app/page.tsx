@@ -5,7 +5,7 @@ import Cards2 from "@/components/Cards2";
 import CardWithImage from "@/components/CardWithImage";
 import HeroOneImg from "@/components/HeroOneImg";
 import PozoviteNasOdmah from "@/components/PozoviteNasOdmah";
-import { cards1Data, cards2Data, cards2DataText } from "@/constants/index";
+import { cards1Data, cards2Data } from "@/constants/index";
 
 export default function Home() {
   return (
@@ -15,11 +15,7 @@ export default function Home() {
       <PozoviteNasOdmah />
       <CardWithImage />
       <Cards1 title={"Naše usluge"} data={cards1Data} />
-      <Cards2
-        title={"Kako funkcioniše saradnja sa nama?"}
-        data={cards2Data}
-        text={cards2DataText}
-      />
+      <Cards2 title={"Kako funkcioniše saradnja sa nama?"} data={cards2Data} />
       <BackgroundImage />
     </div>
   );
