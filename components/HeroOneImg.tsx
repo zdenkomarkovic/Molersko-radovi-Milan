@@ -16,10 +16,10 @@ const HeroOneImg = () => {
       />
 
       <div className="relative container px-2 md:px-4 mx-auto text-center  flex flex-col gap-6 items-center justify-center z-[1] ">
-        <h1 className="text-primary md:text-7xl text-xl font-bold px-4">
+        <h1 className="text-muted text-2xl md:text-7xl font-bold px-4">
           Molersko-farbarski radovi i izrada demit fasade{" "}
         </h1>
-        <h2 className="text-muted font-medium md:text-5xl text-md">
+        <h2 className="text-primary font-bold md:text-5xl text-3xl">
           Majstor Laslo
         </h2>
         <div className="flex flex-col gap-4 md:flex-row">
