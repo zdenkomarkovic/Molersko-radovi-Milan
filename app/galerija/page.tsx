@@ -1,7 +1,4 @@
-import ImageCarusel from "@/components/Imagecarusel";
-import ImageEditor from "@/components/ImageEditor";
 import ImageSliderKlizni from "@/components/ImageSliderKlizni";
-import Image from "@/node_modules/next/image";
 import React from "react";
 
 const page = () => {
