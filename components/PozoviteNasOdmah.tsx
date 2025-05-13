@@ -10,7 +10,7 @@ const PozoviteNasOdmah = () => {
         <h2 className="text-xl md:text-4xl text-center ">
           Zakažite besplatnu procenu i pretvorite svoj prostor u nešto posebno!
         </h2>
-        <a href="tel:">
+        <a href="tel:+381655164072">
           <motion.button
             whileHover={{ translateY: "-5px" }}
             whileTap={{ scale: 0.95 }}

@@ -66,30 +66,30 @@ export default function Contact() {
           <div className=" mx-2 md:mx-20">
             <div className="space-y-3 md:space-y-10 text-lg md:text-2xl">
               <a
-                href="tel:+3816"
+                href="tel:+381655164072"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   <FaPhone className="text-[20px] lg:text-[30px]" />
-                  +38160 000 000
+                  +38165 516 4072
                 </button>
               </a>
               <a
-                href="viber://chat?number=%2B3816"
+                href="viber://chat?number=%2B381655164072"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   <FaViber className="text-[28px] lg:text-[35px] p-1 bg-purple-600 text-white rounded-xl rounde" />{" "}
-                  +38160 000 000
+                  +38165 516 4072
                 </button>
               </a>
               <a
-                href="https://wa.me/3816"
+                href="https://wa.me/381655164072"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   <FaWhatsappSquare className="text-[30px] lg:text-[35px] rounded-2xl text-green-700 " />{" "}
-                  +38160 000 000
+                  +38165 516 4072
                 </button>
               </a>
               <a
@@ -98,7 +98,7 @@ export default function Contact() {
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   <Mail className=" w-[28px] h-[28px]" />{" "}
-                  startermanikam@gmail.com
+                  kicakicanovic23@gmail.com
                 </button>
               </a>
               <a
@@ -218,8 +218,9 @@ export default function Contact() {
             </Form>
           </div>
         </div>
+
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92892.91707130236!2d21.810959218314256!3d43.316276176269426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b0c240c81f65%3A0x56319fe3122ac3cd!2zTmnFoQ!5e0!3m2!1sen!2srs!4v1738712533479!5m2!1sen!2srs"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53860.33015990503!2d20.40513605532925!3d44.80760970627196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa3d7b53fbd%3A0x1db8645cf2177ee4!2sBelgrade!5e0!3m2!1sen!2srs!4v1747097117358!5m2!1sen!2srs"
           width="600"
           height="450"
           style={{ border: "0" }}

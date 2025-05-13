@@ -23,10 +23,10 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/usluge"
+                  href="/galerija"
                   className="text-muted-foreground hover:text-primary"
                 >
-                  Usluge
+                  Galerija
                 </Link>
               </li>
 
@@ -44,16 +44,16 @@ export default function Footer() {
           <div className="space-y-3 pb-5 md:pb-0">
             <div>
               {" "}
-              <a href="tel:+38160 000 000">
+              <a href="tel:+381655164072">
                 <p className="text-muted-foreground  hover:text-primary">
-                  Telefon: +38160 000 000
+                  Telefon: +38165 516 4072
                 </p>
               </a>
             </div>
             <div>
               <a href="mailto:" target={"_blank"}>
                 <p className="text-muted-foreground text-wrap  hover:text-primary">
-                  Email: starter mail
+                  Email: kicakicanovic23@gmail.com
                 </p>
               </a>
             </div>
@@ -76,10 +76,10 @@ export default function Footer() {
           </div>
           <div className="md:col-span-1 col-span-2 text-center text-primary">
             <h3 className="text-lg font-semibold mb-2 md:mb-4">
-              starter naslov
+              Majstor Milan
             </h3>
 
-            <p className=" font-bold ">starter poruka</p>
+            <p className=" font-bold ">Preciznost. Kvalitet. Iskustvo.</p>
           </div>
         </div>
 

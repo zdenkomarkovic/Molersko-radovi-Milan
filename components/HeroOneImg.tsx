@@ -23,7 +23,7 @@ const HeroOneImg = () => {
           Milan Kitanović Beograd
         </h2>
         <div className="flex flex-col gap-4 md:flex-row">
-          <a href="tel:+3816000000">
+          <a href="tel:+381655164072">
             <motion.button
               whileHover={{ translateY: "-5px" }}
               whileTap={{ scale: 0.95 }}
