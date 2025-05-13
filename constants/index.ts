@@ -164,6 +164,46 @@ export const cards1Data: Cards1Data[] = [
     ],
     description: "Za unikatan izgled vašeg zida – elegancija i karakter.",
   },
+  {
+    id: 5,
+    icon: GiWeight,
+    title: "Postavljanje laminata",
+    text: [
+      "Profesionalno sečenje i uklapanje.",
+      "Postavljanje lajsni i podloga.",
+    ],
+    description: "Brzo i precizno, uz maksimalno očuvanje vašeg prostora.",
+  },
+  {
+    id: 6,
+    icon: GiWeight,
+    title: "Postavljanje pločica",
+    text: [
+      "Zidne i podne pločice (kupatila, kuhinje, terase, stepeništa).",
+      "Nivelacija i precizno fugovanje.",
+    ],
+    description: "Tačnost, čistoća i dugotrajnost svakog rešenja..",
+  },
+  {
+    id: 7,
+    icon: GiWeight,
+    title: "Izrada kuhinja po meri",
+    text: [
+      "Projektovanje i izrada kuhinja po narudžbini.",
+      "Ugradnja elemenata, radnih ploča i uređaja.",
+    ],
+    description: "Funkcionalnost i estetika u skladu sa vašim prostorom.",
+  },
+  {
+    id: 8,
+    icon: GiWeight,
+    title: "Izrada plakara po meri",
+    text: [
+      "Ugradni plakari, klizna vrata, otvorene police.",
+      "Maksimalno iskorišćenje prostora.",
+    ],
+    description: "Moderni i praktični plakari, izrađeni po vašim dimenzijama.",
+  },
 ];
 
 export interface ServisCardsData {

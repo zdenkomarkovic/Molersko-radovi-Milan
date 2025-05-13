@@ -1,3 +1,6 @@
+import ImageCarusel from "@/components/Imagecarusel";
+import ImageEditor from "@/components/ImageEditor";
+import ImageSliderKlizni from "@/components/ImageSliderKlizni";
 import Image from "@/node_modules/next/image";
 import React from "react";
 
@@ -13,49 +16,17 @@ const page = () => {
           u kvalitet i stil koji pružamo svakom klijentu.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-5">
-          <Image
-            src={"/1000002603.jpg"}
-            width={500}
-            height={500}
-            alt="fasada"
-            className="w-full object-cover"
-          />
-          <Image
-            src={"/1000002604.jpg"}
-            width={500}
-            height={500}
-            alt="fasada"
-            className="w-full object-cover"
-          />
-          <Image
-            src={"/1000002605.jpg"}
-            width={500}
-            height={500}
-            alt="fasada"
-            className="w-full object-cover"
-          />
-          <Image
-            src={"/1000002606.jpg"}
-            width={500}
-            height={500}
-            alt="fasada"
-            className="w-full object-cover"
-          />
-          <Image
-            src={"/1000002607.jpg"}
-            width={500}
-            height={500}
-            alt="fasada"
-            className="w-full object-cover"
-          />
-          <Image
-            src={"/1000002608.jpg"}
-            width={500}
-            height={500}
-            alt="fasada"
-            className="w-full object-cover"
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <p className="py-2">
+              Gipsarski Molerski radovi i Dekorativne tehnike
+            </p>
+            <ImageSliderKlizni images={images} />
+          </div>
+          <div>
+            <p className="py-2">Postavljanje laminata i plocica</p>
+            <ImageSliderKlizni images={images2} />
+          </div>
         </div>
       </div>
     </div>
@@ -63,3 +34,166 @@ const page = () => {
 };
 
 export default page;
+
+const images = [
+  "/1000002603.jpg",
+  "/1000002604.jpg",
+  "/1000002608.jpg",
+  "/1000002607.jpg",
+  "/1000002606.jpg",
+  "/1000002605.jpg",
+  "/IMG-0ab20452fd6197ce1b27270f83e20779-V.jpg",
+  "/IMG-0bcb3e2b4beab73d89554f38c68c5b50-V.jpg",
+  "/IMG-0c7d38cbb0a66a772dfef4791e7f6363-V.jpg",
+  "/IMG-0c9c3d3fd5b69e8f7947944c79c590ac-V.jpg",
+  "/IMG-0dd247cabf3993de2f9e8f92ea725069-V.jpg",
+  "/IMG-0dd0316eb33e459eb4035dc1c677d29f-V.jpg",
+  "/IMG-1af81b0b57aaee71230025e7f645e68a-V.jpg",
+  "/IMG-1ee0684b15a52bef6fc7b871f535ef65-V.jpg",
+  "/IMG-2a33a7028bbc301f270919b83677d78a-V.jpg",
+  "/IMG-3afa70b54e97ecc7c8283269e7e18125-V.jpg",
+  "/IMG-3b60d318d2126b0f672bdc16bf8fba3b-V.jpg",
+  "/IMG-3e2c1554776f521dc2f7051e46eb6706-V.jpg",
+  "/IMG-3f6cfc237efb9cd526525e9f6b7a4470-V.jpg",
+  "/IMG-4bb1289786786c9dc8b4bc1c8bb849ea-V.jpg",
+  "/IMG-4bcbb756f4c9b613079147eb08772fcb-V.jpg",
+  "/IMG-4ce4470522cd645cbfcfc6c68850352c-V.jpg",
+  "/IMG-4e52a280f267a26a46f582f1538afe2f-V.jpg",
+  "/IMG-4f9e7f9ebaf8debbeba824b439de9994-V.jpg",
+  "/IMG-5d31f626a472c03e18486a982cbde039-V.jpg",
+  "/IMG-5f185d2fbe76b282b142c4346c1d0183-V.jpg",
+  "/IMG-6f3989e24267a859492db449de76746f-V.jpg",
+  "/IMG-7a76d739990844f06ad416d1e2d77284-V.jpg",
+  "/IMG-7f1181d47aaea326a56c2d9c1cef6c92-V.jpg",
+  "/IMG-8a1b342d50eb53190cc4fba3bc0f93af-V.jpg",
+  "/IMG-8ccb968e9949b055db377fb4f314aa68-V.jpg",
+  "/IMG-9fd28c0a78f8c367577a4a6c3d39e626-V.jpg",
+  "/IMG-11ab6e29eb714ac8beed35771390abcb-V.jpg",
+  "/IMG-14ace4eb6bb974df979ed674e1fc74a3-V.jpg",
+  "/IMG-15a85c5c63e2875c9be26c5563215376-V.jpg",
+  "/IMG-20d8c22b72735b02cf71f1da55b66b3a-V.jpg",
+  "/IMG-25b298b7195a675af1f175ba562fde0c-V.jpg",
+  "/IMG-028e5933f896ea50af28754df2656438-V.jpg",
+  "/IMG-31dd8a02920dddb9f25990941fdbf60f-V.jpg",
+  "/IMG-032a70a951308bf09f7bb3db2557dca8-V.jpg",
+  "/IMG-35ec7f0578b7fbf4a48ae2fa848428cb-V.jpg",
+  "/IMG-40fcc38165d22d05b306f6cca7abf7fb-V.jpg",
+  "/IMG-41ad735de87143cbbec2cdc7341577ab-V.jpg",
+  "/IMG-43cc6c63c60bce9cad0d7dd1166f3035-V.jpg",
+  "/IMG-49fe9534d4cff60b79d1c0abaf0f0f55-V.jpg",
+  "/IMG-53c6f9c34dec116369149eea56f3d7d9-V.jpg",
+  "/IMG-56a0485a1d794aff293540a0d835b1e5-V.jpg",
+  "/IMG-57d783be077e153701d8406692ea5165-V.jpg",
+  "/IMG-60ad810239c80704ed032923848afea5-V.jpg",
+  "/IMG-68c0e24afdcd6b7cbdbd1cb91fdb685c-V.jpg",
+  "/IMG-79dd434b2af6b31b931c1487cb289389-V.jpg",
+  "/IMG-79f01e6ad8984f43dd47685f22f9b16d-V.jpg",
+  "/IMG-86cc742fb63590d11ffa5630bef0601f-V.jpg",
+  "/IMG-92f780f3754a0d1966121d52796090d1-V.jpg",
+  "/IMG-95cf865c1856cf6ca02edb8f32adbdd1-V.jpg",
+  "/IMG-164e5c8439fdffdb1daee887514e5ef6-V.jpg",
+  "/IMG-222a40d74f905574ae374e503a75c7a3-V.jpg",
+  "/IMG-0267dc379b87b9971b348a05a98bc05f-V.jpg",
+  "/IMG-443e37335518ae9a10802661c30c0d6e-V.jpg",
+  "/IMG-483aa6a1d87915b69d39d54cb6b1b527-V.jpg",
+  "/IMG-526a7dcd2b9aa4eef3ea87128093139b-V.jpg",
+  "/IMG-595f65034bf12007aedefd23785ee1d2-V.jpg",
+  "/IMG-597fc1caff627670dce05922e5a18c97-V.jpg",
+  "/IMG-680aa735de810f77c850bffd2f2c527a-V.jpg",
+  "/IMG-715f049276db4e8e98202dc4d5cbf5ec-V.jpg",
+  "/IMG-825eaab672220bb679723a5423a0bcde-V.jpg",
+  "/IMG-898d9ba5ed66a1b590baf018e3b39026-V.jpg",
+  "/IMG-907c337b1d79ca137e20b200683c25c1-V.jpg",
+  "/IMG-947b1e9006ce8bacf415965893a2459e-V.jpg",
+  "/IMG-1228bc78e9403a23a63734e4f1893b37-V.jpg",
+  "/IMG-2082fd269a92332698a967283fcf44a1-V.jpg",
+  "/IMG-2989f0a322429c814349e47348ac09cc-V.jpg",
+  "/IMG-3648d5760b88a8fb6faa503603b1cae1-V.jpg",
+  "/IMG-5496ea8dc7ebadfd02f2f01859c25b05-V.jpg",
+  "/IMG-6084d8a5e039a60ca6a22c593fd750f0-V.jpg",
+  "/IMG-6259ba79317e34f64c5acd94f44658c6-V.jpg",
+  "/IMG-6364b064e474cd3216cb5918b196d69d-V.jpg",
+  "/IMG-7022dce04bc4a0b7e7f83f038992e124-V.jpg",
+  "/IMG-07570a8f8160e68aa0d628e3c2583827-V.jpg",
+  "/IMG-9518b8c4fbc0062e85e69bf33685262a-V.jpg",
+  "/IMG-68399ef514951af12c714ec4beefd850-V.jpg",
+  "/IMG-620641ad0055b378d5e6768b1fafbb9f-V.jpg",
+  "/IMG-877778d5793426221d688fbc79660f7c-V.jpg",
+  "/IMG-37953633cbb52601b7d2bc48add26837-V.jpg",
+  "/IMG-a3abbb348ebede6cb6b0a07012fb35a9-V.jpg",
+  "/IMG-a3d281dffb88bb7678a1094abaf9b606-V.jpg",
+  "/IMG-a5b1c8fa9a7f39c0f70c90478c4c41d5-V.jpg",
+  "/IMG-a59bc7bedf26b5aa55b9ebce6e0b8001-V.jpg",
+  "/IMG-a983e2b95bd18c48ca15615d679b1df9-V.jpg",
+  "/IMG-a2238a44e561750dd85d112c87176f65-V.jpg",
+  "/IMG-a429470f7caa5dd241dc28d73d44fa93-V.jpg",
+  "/IMG-ab06e5233f54e936a8398b77c2714127-V.jpg",
+  "/IMG-add3e12e82bfbaf5ecf5f7dcb667e07e-V.jpg",
+  "/IMG-b4abec579fef7123304d3b21812ddbab-V.jpg",
+  "/IMG-b5bf4093259f870afcae8025705e2d06-V.jpg",
+  "/IMG-b47dec0fae4e71863841a51dc24a453d-V.jpg",
+  "/IMG-b67cc19de4facbd08b063afa9a8ad50c-V.jpg",
+  "/IMG-b910b5ab1f0e77c7c4fe4b1a6d8e9df4-V.jpg",
+  "/IMG-b067245c2d6052810bd993835b0de2ec-V.jpg",
+  "/IMG-badd18c550bb2fa9dd52449f2a926108-V.jpg",
+  "/IMG-bb092614fbfc5c47473e2829d98bf85f-V.jpg",
+  "/IMG-bbfb0002dede650d7cf1be7fd2bfe457-V.jpg",
+  "/IMG-be71f13c18d0927ec396782fb4f345bf-V.jpg",
+  "/IMG-c7645635c8f40f5be1653da854b465e9-V.jpg",
+  "/IMG-ccb24c200e727f80bba41cbead7ccde9-V.jpg",
+  "/IMG-cda7b9e8d90f1bbaf0421dd4eac13c67-V.jpg",
+  "/IMG-cdd724cc5e863c17462400ebd821c6da-V.jpg",
+  "/IMG-cdf02feb122d0d7be889107d06780f31-V.jpg",
+  "/IMG-cfc4aa62d7499b1cc03723a3e71259d9-V.jpg",
+  "/IMG-d1a45a4a34eb82dd5ad50f944a9e2d07-V.jpg",
+  "/IMG-d9a21e4562c0242929f61325ccc400e5-V.jpg",
+  "/IMG-d62bc82f6544a5ca5b65e845f2311546-V.jpg",
+  "/IMG-d724be26b383fd742dd15847d15768a2-V.jpg",
+  "/IMG-d435289e152d1d76c2828ca569736c9d-V.jpg",
+  "/IMG-d809021b9650a43fbfb926ee11f5f16f-V.jpg",
+  "/IMG-dc207369fbf0ad517f1c2a0c3602afa7-V.jpg",
+  "/IMG-df2930aa8b0dda8f9a7d7b49bbfe8fcc-V.jpg",
+  "/IMG-e0f5885c1e6dfd2651a211e6629a29f6-V.jpg",
+  "/IMG-e6cc60b1b90f9270252fd9a4097c5483-V.jpg",
+  "/IMG-e27ca28d509efe285d52ea4d3e037a9f-V.jpg",
+  "/IMG-e38bbd3b3f6cfdaa555b9125254f3620-V.jpg",
+  "/IMG-e786c2101b3088756830ac4eeb65247e-V.jpg",
+  "/IMG-e921f2aaa28cc31159e06ec709bb9496-V.jpg",
+  "/IMG-e23240f1ce867370587bcd7f1ba924cc-V.jpg",
+  "/IMG-eed3e3f7d9895a1820bbaf677fffaa32-V.jpg",
+  "/IMG-f1c9a46670f47a54c252ee3757354f95-V.jpg",
+  "/IMG-f06dd3c48d29ead334ee9f8481a2f7c0-V.jpg",
+  "/IMG-f50eedf4758079d1cb14f07d46a193db-V.jpg",
+  "/IMG-f55e7eb121635ac99716dca431527fb2-V.jpg",
+  "/IMG-f69ea84187294ae4cdc349f50b48cdb5-V.jpg",
+  "/IMG-f587d5c158579f8b20fd8fe3ed119a02-V.jpg",
+  "/IMG-f57811ec9ff74d8937f182cc087161a8-V.jpg",
+  "/IMG-f244395ca31b054f52a70675e7103633-V.jpg",
+  "/IMG-f772092da3b9064e1e42a60163110ce9-V.jpg",
+  "/IMG-f9478536837ed638924aa85e347f91d3-V.jpg",
+  "/IMG-fb70f7cd500f4aabdf5f8ee1121bbb2d-V.jpg",
+];
+const images2 = [
+  "/IMG-5a920b81ed0583d05b6c1668dc980341-V.jpg",
+  "/IMG-0e7e897ababc5c356d9ed609cd14bf41-V.jpg",
+  "/IMG-0ead1b23ff90ba6364172ee3261d9741-V.jpg",
+  "/IMG-1c326cef8645e949f36c17cc3ba8573f-V.jpg",
+  "/IMG-1f01ad06b677052acd390f1913f9fd27-V.jpg",
+  "/IMG-2c671d21a466911213f8977456817493-V.jpg",
+  "/IMG-5e0d0c0098f40d8a91a6327356df27e3-V.jpg",
+  "/IMG-6c43356335db8e875adbf55f4ecd25f0-V.jpg",
+  "/IMG-27cf9b425e4eed793a0daca12cc75548-V.jpg",
+  "/IMG-032aa473d5615250bcf4abcc5b01e860-V.jpg",
+  "/IMG-44d0f03bd060e175c72dde8171240572-V.jpg",
+  "/IMG-52a3cf433b057892fe3c6c41ffe5d292-V.jpg",
+  "/IMG-73bce125348dec713ecb85580c22696d-V.jpg",
+  "/IMG-742cca48a3fb8e6317e2a9abcca4ee9d-V.jpg",
+  "/IMG-8114e416be8028ec8fe1577211dc6df2-V.jpg",
+  "/IMG-aaad271eed15f54e5a96494e4edb7def-V.jpg",
+  "/IMG-aad119ef4bfeee17a93d46c741523dc4-V.jpg",
+  "/IMG-ae5be01ec498e9b9d992df1019489069-V.jpg",
+  "/IMG-b6e6f9d619d149e46ce4d32a16adbf80-V.jpg",
+  "/IMG-c6f354a3145d7fdb26388fd115c24469-V.jpg",
+  "/IMG-dfc96a3da0f5660dd7c900833d6e3260-V.jpg",
+  "/IMG-e5566a7691bf2b28700bbe37bb1f738f-V.jpg",
+];
