@@ -14,8 +14,8 @@ export const navList = [
     link: "/",
   },
   {
-    title: "Fasade",
-    link: "/fasade",
+    title: "Galerija",
+    link: "/galerija",
   },
   {
     title: "Kontakt",
@@ -118,52 +118,51 @@ export interface Cards1Data {
   icon: IconType;
   title: string;
   text: string[];
+  description: string;
 }
 
 export const cards1Data: Cards1Data[] = [
   {
     id: 1,
     icon: GiWeight,
-    title: "Gletovanje zidova",
+    title: "Gipsarski radovi",
     text: [
-      "Priprema zidova za farbanje i krečenje.",
-      "Ravnanje neravnih površina i popunjavanje pukotina.",
-      " Korišćenje kvalitetnih glet masa za dugotrajan efekat.",
+      "Spušteni plafoni.",
+      "Zidne obloge od gipsa.",
+      "Maskiranje instalacija i rasvete.",
       "Precizna završna obrada za savršeno glatke zidove.",
     ],
+    description: "Estetska i funkcionalna rešenja uz kvalitetnu izradu.",
   },
   {
     id: 2,
     icon: GiWeight,
-    title: "Farbanje i krečenje zidova i plafona",
+    title: "Molerski radovi",
     text: [
-      "Nanošenje disperzionih, akrilnih, poludisperzionih i drugih boja.",
-      " Korišćenje boja visokog kvaliteta koje su otporne na habanje i pranje.",
-      "Tehnički precizna aplikacija za ravnomernu pokrivenost bez fleka.",
-      "Poštovanje svih higijenskih standarda - minimalno prašenje i prljanje.",
+      "Gletovanje zidova i plafona.",
+      "Krečenje (belo i u boji).",
+      "Priprema i zaštita prostora.",
     ],
+    description: "Brz, uredan i dugotrajan završetak radova.",
   },
   {
     id: 3,
     icon: GiWeight,
-    title: "Dekoracije zidova - Različite tehnike farbanja i oslikavanja",
-    text: [
-      "Dekorativne tehnike - mermer efekat, beton look, metalik boje, patina efekti.",
-      "Strukturirane zidne tehnike - upotreba valjaka, četki i šablona za jedinstvene motive.",
-      "Ombre efekat - postepeni prelazi između boja za moderan izgled.",
-      "Tapetiranje - lepljenje tapeta uz savršeno poravnanje spojeva.",
-    ],
+    title: "Lepljenje tapeta",
+    text: ["Klasične i 3D tapete.", "Fototapete i specijalne teksture."],
+    description: "Profesionalno lepljenje bez mehurića i spojeva.",
   },
   {
     id: 4,
     icon: GiWeight,
-    title: "Izrada demit fasade",
+    title: "Dekorativne tehnike",
     text: [
-      "Postavljanje termoizolacije - stiropor, kamena vuna i drugi termoizolacioni materijali.",
-      " Armiranje i završna obrada - zaštitni slojevi koji produžavaju trajnost fasade.",
-      " Širok izbor završnih fasadnih boja i struktura - od glatkih do rustičnih.",
-      "Dugotrajna zaštita - fasade otporne na vremenske uslove i UV zračenje.",
+      "Travertino.",
+      "Beton efekat.",
+      "Stucco veneziano.",
+      "Oslikavanje i kombinovane tehnike.",
     ],
+    description: "Za unikatan izgled vašeg zida – elegancija i karakter.",
   },
 ];
 

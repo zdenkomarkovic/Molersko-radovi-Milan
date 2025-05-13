@@ -1,4 +1,10 @@
-import { CardHeader, CardTitle, CardContent, Card } from "./ui/card";
+import {
+  CardHeader,
+  CardTitle,
+  CardContent,
+  Card,
+  CardFooter,
+} from "./ui/card";
 import MotionComponent1 from "./MotionComponent1";
 import { Cards1Data } from "@/constants/index";
 
@@ -27,19 +33,22 @@ export default Cards1;
 
 const OneCard = ({ item }: { item: Cards1Data }) => {
   return (
-    <Card className="h-full">
+    <Card className="h-full flex flex-col justify-between">
       <CardHeader>
-        <CardTitle className="text-lg md:text-xl">{item.title}</CardTitle>
+        <CardTitle>{item.title}</CardTitle>
       </CardHeader>
       <CardContent className="text-sm md:text-lg text-left px-2 md:px-3">
         {item.text.map((text, i) => {
           return (
-            <p key={i} className="py-1">
+            <p key={i} className="">
               - {text}
             </p>
           );
         })}
       </CardContent>
+      <CardFooter>
+        <p className="text-primary">{item.description}</p>
+      </CardFooter>
     </Card>
   );
 };

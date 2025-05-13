@@ -5,13 +5,12 @@ import { PhoneIcon } from "lucide-react";
 
 const PozoviteNasOdmah = () => {
   return (
-    <div className="bg-foreground text-primary mt-10 md:mt-20 py-10 md:py-20">
+    <div className="bg-foreground text-primary py-10 md:py-20">
       <div className="container px-2 md:px-4 mx-auto font-bold flex flex-col md:flex-row items-center gap-10 md:gap-20">
         <h2 className="text-xl md:text-4xl text-center ">
-          Ako želite kvalitetne i precizne molersko-farbarske radove ili izradu
-          demit fasade, pozovite Majstora Lasla i zakažite besplatnu procenu!
+          Zakažite besplatnu procenu i pretvorite svoj prostor u nešto posebno!
         </h2>
-        <a href="tel:+381659480700">
+        <a href="tel:">
           <motion.button
             whileHover={{ translateY: "-5px" }}
             whileTap={{ scale: 0.95 }}
