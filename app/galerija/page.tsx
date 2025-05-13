@@ -1,4 +1,5 @@
 import ImageSliderKlizni from "@/components/ImageSliderKlizni";
+import VideoCard from "@/components/VideoCard";
 import React from "react";
 
 const page = () => {
@@ -25,6 +26,7 @@ const page = () => {
             <ImageSliderKlizni images={images2} />
           </div>
         </div>
+        <VideoCard />
       </div>
     </div>
   );
