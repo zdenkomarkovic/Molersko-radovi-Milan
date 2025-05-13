@@ -48,11 +48,11 @@ const About2 = () => {
           className="rounded-3xl overflow-hidden  md:w-1/3"
         >
           <Image
-            src={"/moler.jpg"}
-            width={500}
-            height={800}
+            src={"/E10B1NUT.avif"}
+            width={600}
+            height={600}
             alt="fasade"
-            className="object-cover h-[300px] md:h-full"
+            className="object-cover aspect-[6/5]"
           />
         </motion.div>
       </div>
