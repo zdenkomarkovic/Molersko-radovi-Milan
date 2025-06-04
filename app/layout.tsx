@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   description:
     "Iskusan majstor iz Beograda za gips, moleraj, tapete i dekorativne tehnike. Precizan i pouzdan rad, bez kašnjenja. Zakažite besplatnu procenu!",
   icons: {
-    icon: "/manikam.png",
-    apple: "/manikam.png",
+    icon: "/favicon-96x96.png",
+    apple: "/apple-touch-icon.png",
   },
   keywords: [
     "majstor Beograd",
