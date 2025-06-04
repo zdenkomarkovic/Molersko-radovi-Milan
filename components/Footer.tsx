@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Facebook, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -51,26 +50,10 @@ export default function Footer() {
               </a>
             </div>
             <div>
-              <a href="mailto:" target={"_blank"}>
+              <a href="mailto:kicakicanovic23@gmail.com" target={"_blank"}>
                 <p className="text-muted-foreground text-wrap  hover:text-primary">
                   Email: kicakicanovic23@gmail.com
                 </p>
-              </a>
-            </div>
-            <div className="flex space-x-4 justify-center md:justify-start">
-              <a
-                href="#"
-                target={"_blank"}
-                className="text-muted-foreground hover:text-primary"
-              >
-                <Facebook />
-              </a>
-              <a
-                href="#"
-                target={"_blank"}
-                className="text-muted-foreground hover:text-primary"
-              >
-                <Instagram />
               </a>
             </div>
           </div>

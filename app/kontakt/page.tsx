@@ -4,7 +4,6 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { sendMail } from "@/lib/send-mail";
 import { toast } from "sonner";
-import { FaInstagram } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { FaViber } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
@@ -19,7 +18,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Facebook, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, { message: "Molimo unesite vase ime i prezime" }),
@@ -75,6 +74,15 @@ export default function Contact() {
                 </button>
               </a>
               <a
+                href="tel:+381637156779"
+                className="py-[7px] flex border-b-[1px] border-primary"
+              >
+                <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
+                  <FaPhone className="text-[20px] lg:text-[30px]" />
+                  +38163 715 6779
+                </button>
+              </a>
+              <a
                 href="viber://chat?number=%2B381655164072"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
@@ -93,36 +101,12 @@ export default function Contact() {
                 </button>
               </a>
               <a
-                href="mailto:"
+                href="mailto:kicakicanovic23@gmail.com"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   <Mail className=" w-[28px] h-[28px]" />{" "}
                   kicakicanovic23@gmail.com
-                </button>
-              </a>
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                className="py-[7px] flex border-b-[1px] border-primary "
-              >
-                <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
-                  {" "}
-                  <FaInstagram className=" text-[28px] lg:text-[30px]" />
-                  manikam_starter
-                </button>
-              </a>
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                className="py-[7px] flex border-b-[1px] border-primary "
-              >
-                <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
-                  {" "}
-                  <Facebook className=" text-[28px] lg:text-[30px]" />
-                  Manikam Starter
                 </button>
               </a>
             </div>
