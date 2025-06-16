@@ -88,7 +88,7 @@ export default function Header() {
           : "bg-transparent"
       }  fixed top-0 left-0 right-0 z-[10] transition-colors`}
     >
-      <nav className="flex items-center justify-between px-8 py-4 max-w-[80rem] w-full text-primary font-bold">
+      <nav className="flex items-center justify-between px-8 py-1 md:py-4 max-w-[80rem] w-full text-primary font-bold">
         <Link href="/" className="">
           <Image
             src={Logo}
@@ -99,18 +99,32 @@ export default function Header() {
           />
         </Link>
         <DesktopNav />
-        <Link href="tel:+381655164072">
-          <motion.button
-            whileHover={{
-              color: "hsl(var(--foreground))",
-              backgroundColor: "hsl(var(--primary))",
-            }}
-            className=" items-center justify-center rounded-full text-primary border-primary border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex"
-          >
-            <PhoneIcon />
-            <p className="">+38165 516 4072</p>
-          </motion.button>
-        </Link>
+        <div className=" flex flex-col md:flex-row gap-1 md:gap-3">
+          <Link href="tel:+381655164072">
+            <motion.button
+              whileHover={{
+                color: "hsl(var(--foreground))",
+                backgroundColor: "hsl(var(--primary))",
+              }}
+              className=" items-center justify-center rounded-full text-primary border-primary border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex"
+            >
+              <PhoneIcon />
+              <p className="">+38165 516 4072</p>
+            </motion.button>
+          </Link>
+          <Link href="tel:+381637156779">
+            <motion.button
+              whileHover={{
+                color: "hsl(var(--foreground))",
+                backgroundColor: "hsl(var(--primary))",
+              }}
+              className=" items-center justify-center rounded-full text-primary border-primary border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex"
+            >
+              <PhoneIcon />
+              <p className="">+38163 715 6779</p>
+            </motion.button>
+          </Link>
+        </div>
         <MobileMenu />
       </nav>
     </header>

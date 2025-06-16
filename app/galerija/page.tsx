@@ -35,6 +35,10 @@ const page = () => {
 export default page;
 
 const images = [
+  "/smor (1).jpg",
+  "/smor (2).jpg",
+  "/smor (3).jpg",
+  "/smor (4).jpg",
   "/IMG-de73c63105b1f90a246b85676d3421ce-V.jpg",
   "/IMG-2c7f3dd16a23d9269640b19b66a3dbe2-V.jpg",
   "/IMG-3b9d376c714834c4baf3fbbdd2ad425b-V.jpg",
